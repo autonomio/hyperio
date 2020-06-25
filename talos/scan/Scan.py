@@ -135,6 +135,7 @@ class Scan:
                  experiment_name,
                  x_val=None,
                  y_val=None,
+                 sample_weight=None,
                  val_split=.3,
                  random_method='uniform_mersenne',
                  seed=None,
@@ -161,6 +162,7 @@ class Scan:
         self.experiment_name = experiment_name
         self.x_val = x_val
         self.y_val = y_val
+        self.sample_weight = sample_weight
         self.val_split = val_split
 
         # randomness
